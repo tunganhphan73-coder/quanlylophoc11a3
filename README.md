@@ -37,4 +37,3 @@ Dự án này tiếp tục dùng dữ liệu Supabase hiện tại. Hãy dùng �
 Lưu ý: hệ thống hiện tại dùng tài khoản phụ huynh/học sinh chung theo lớp và hồ sơ gắn với `class_id`; chưa có liên kết tài khoản tới một học sinh cụ thể. Muốn giới hạn riêng từng tài khoản vào từng học sinh cần thiết kế migration liên kết và cấp quyền riêng, không nên tự gán học sinh khi chưa có dữ liệu xác nhận.
 
 Tuần học hiện được tạo theo lịch mẫu sẵn có trong mã và trạng thái chốt tuần được lưu ở trình duyệt. Đây chưa phải lịch tuần dùng chung trong Supabase.
-

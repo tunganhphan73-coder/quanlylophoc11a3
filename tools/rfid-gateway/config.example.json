@@ -1,0 +1,6 @@
+{
+  "appUrl": "https://YOUR-VERCEL-DOMAIN/api/rfid/scan",
+  "readerToken": "PASTE-ONE-TIME-TOKEN-HERE",
+  "listenHost": "127.0.0.1",
+  "listenPort": 8787
+}

@@ -1,0 +1,9 @@
+{
+  "name": "class-emulation-rfid-gateway",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "start": "node gateway.mjs",
+    "mock": "node mock-reader.mjs"
+  }
+}

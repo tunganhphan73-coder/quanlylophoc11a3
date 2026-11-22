@@ -1,0 +1,3 @@
+-- No destructive rollback is provided: app_error_reports contains diagnostic
+-- history and dropping it would permanently erase it. To disable the feature,
+-- deploy the prior app version; preserve this table for any future audit.

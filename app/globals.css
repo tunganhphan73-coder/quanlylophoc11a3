@@ -1,0 +1,240 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: light;
+  --page: #f8fafc;
+  --surface: #ffffff;
+  --ink: #172554;
+  --muted: #475569;
+  --line: #dbe3ec;
+  --blue: #1e40af;
+}
+
+html,
+body {
+  min-height: 100%;
+  margin: 0;
+  background: var(--page);
+  color: #0f172a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+button,
+input,
+select,
+textarea {
+  font: inherit;
+}
+
+:focus-visible {
+  outline: 2px solid #1d4ed8;
+  outline-offset: 2px;
+}
+
+.dashboard-layout,
+.dashboard-main {
+  min-width: 0;
+}
+
+.dashboard-layout {
+  overflow-x: clip;
+  color: #0f172a;
+  background: var(--page) !important;
+  background-image: none !important;
+}
+
+/* The existing feature components share this plain blue and white theme. */
+.dashboard-layout [class*="bg-black/"],
+.dashboard-layout [class*="bg-[#111"] {
+  background: #ffffff !important;
+}
+
+.dashboard-layout [class*="bg-white/["],
+.dashboard-layout [class~="bg-white/10"],
+.dashboard-layout [class~="bg-white/20"] {
+  background: #f8fafc !important;
+}
+
+.dashboard-layout [class*="bg-[#E7B93F]/"],
+.dashboard-layout [class*="bg-[#E3B23C]/"] {
+  background: #eff6ff !important;
+}
+
+.dashboard-layout [class~="bg-[#E7B93F]"],
+.dashboard-layout [class~="bg-[#E3B23C]"],
+.dashboard-layout [class~="bg-[#F1C84C]"] {
+  background: var(--blue) !important;
+  color: #ffffff !important;
+}
+
+.dashboard-layout [class*="bg-emerald-950/"],
+.dashboard-layout [class*="bg-emerald-300/"],
+.dashboard-layout [class*="bg-emerald-400/["],
+.dashboard-layout [class*="bg-red-950/"],
+.dashboard-layout [class*="bg-red-300/"],
+.dashboard-layout [class*="bg-red-400/["],
+.dashboard-layout [class*="bg-red-500/10"],
+.dashboard-layout [class*="bg-amber-300/["],
+.dashboard-layout [class*="bg-amber-400/["],
+.dashboard-layout [class*="bg-amber-950/"] {
+  background-color: #f8fafc !important;
+}
+
+.dashboard-layout [class~="text-white"],
+.dashboard-layout [class*="text-white/"] {
+  color: #172033 !important;
+}
+
+.dashboard-layout [class*="text-[#E7B93F]"],
+.dashboard-layout [class*="text-[#E3B23C]"],
+.dashboard-layout [class*="text-[#F3D783]"] {
+  color: var(--blue) !important;
+}
+
+.dashboard-layout [class*="text-emerald-"],
+.simple-dialog [class*="text-emerald-"] {
+  color: #047857 !important;
+}
+
+.dashboard-layout [class*="text-red-"],
+.simple-dialog [class*="text-red-"] {
+  color: #b91c1c !important;
+}
+
+.dashboard-layout [class*="text-amber-"],
+.simple-dialog [class*="text-amber-"] {
+  color: #92400e !important;
+}
+
+.dashboard-layout [class*="text-white"][class~="bg-red-500/90"],
+.dashboard-layout [class*="text-white"][class~="bg-red-500"] {
+  color: #ffffff !important;
+}
+
+.dashboard-layout [class*="border-white/"],
+.dashboard-layout [class*="border-[#E7B93F]"],
+.dashboard-layout [class*="border-[#E3B23C]"] {
+  border-color: var(--line) !important;
+}
+
+.dashboard-layout input,
+.dashboard-layout select,
+.dashboard-layout textarea {
+  border-color: #cbd5e1 !important;
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+}
+
+.dashboard-layout input::placeholder,
+.dashboard-layout textarea::placeholder {
+  color: #64748b !important;
+}
+
+.dashboard-layout [class*="text-white"][class~="bg-blue-700"],
+.dashboard-layout [class*="text-white"][class~="bg-blue-800"],
+.dashboard-layout [class*="text-white"][class~="bg-blue-900"] {
+  color: #ffffff !important;
+}
+
+.dashboard-layout [class*="bg-emerald-"],
+.dashboard-layout [class*="bg-red-"],
+.dashboard-layout [class*="bg-amber-"] {
+  box-shadow: none;
+}
+
+.dashboard-mobile-preview .dashboard-main {
+  max-width: 480px;
+}
+
+.dashboard-mobile-preview .dashboard-header-actions {
+  width: 100%;
+  justify-content: flex-start;
+}
+
+.dashboard-mobile-preview .dashboard-overview-grid,
+.dashboard-mobile-preview .student-adjustment-grid,
+.dashboard-mobile-preview .ocr-logbook-row {
+  grid-template-columns: minmax(0, 1fr) !important;
+}
+
+.dashboard-mobile-preview .ocr-roster-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+}
+
+.dashboard-layout [class*="backdrop-blur"] {
+  backdrop-filter: none !important;
+}
+
+.dashboard-layout [class~="shadow-2xl"] {
+  box-shadow: 0 2px 8px rgb(15 23 42 / 8%) !important;
+}
+
+.simple-dialog,
+.simple-week-dialog {
+  background-color: #ffffff !important;
+  color: #172033;
+  border-color: var(--line) !important;
+  box-shadow: 0 2px 8px rgb(15 23 42 / 8%) !important;
+}
+
+.simple-dialog [class*="text-white"],
+.simple-week-dialog [class*="text-white"] {
+  color: #172033 !important;
+}
+
+.simple-dialog [class*="text-[#E7B93F]"],
+.simple-dialog [class*="text-[#F3D783]"],
+.simple-week-dialog [class*="text-[#F3D783]"],
+.simple-week-dialog [class*="text-[#E7B93F]"] {
+  color: var(--blue) !important;
+}
+
+.simple-dialog [class*="border-white/"],
+.simple-week-dialog [class*="border-white/"] {
+  border-color: var(--line) !important;
+}
+
+.simple-dialog [class*="bg-white/"],
+.simple-week-dialog [class*="bg-white/"],
+.simple-dialog [class*="bg-[#111"],
+.simple-week-dialog [class*="bg-[#111"] {
+  background-color: #f8fafc !important;
+}
+
+.simple-dialog [class*="bg-[#E7B93F]/"],
+.simple-week-dialog [class*="bg-[#E7B93F]/"] {
+  background-color: #eff6ff !important;
+}
+
+.simple-dialog [class~="bg-[#E7B93F]"],
+.simple-week-dialog [class~="bg-[#E7B93F]"] {
+  background-color: var(--blue) !important;
+  color: #ffffff !important;
+}
+
+.simple-dialog input,
+.simple-dialog select,
+.simple-dialog textarea,
+.simple-week-dialog input,
+.simple-week-dialog select,
+.simple-week-dialog textarea {
+  background-color: #ffffff !important;
+  color: #0f172a !important;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
